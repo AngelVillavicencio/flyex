@@ -1,13 +1,27 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import { Dashboard, Auth } from "@/layouts";
+import { Dashboard } from "@/layouts";
+import Landing from "./pages/Landing";
+import IniciaSesion from "./pages/IniciaSesion";
+import RegistroSesion from "./pages/RegistroSesion";
+import { AuthProvider } from "./context/context/authContext/Index";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/dashboard/*" element={<Dashboard />} />
-      <Route path="/auth/*" element={<Auth />} />
-      <Route path="*" element={<Navigate to="/dashboard/home" replace />} />
-    </Routes>
+    <AuthProvider>
+      <Routes>
+        <Route path="/overview/*" element={<Dashboard />} />
+        <Route
+          path="/"
+          element={
+            <Landing />
+          }
+        />
+        <Route path="/inicia-sesion" element={<IniciaSesion></IniciaSesion>}></Route>
+        <Route path="/registrarse" element={<RegistroSesion></RegistroSesion>}></Route>
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </AuthProvider>
+
   );
 }
 

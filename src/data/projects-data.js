@@ -1,8 +1,8 @@
 export const projectsData = [
   {
     img: "/img/home-decor-1.jpeg",
-    title: "Modern",
-    tag: "Project #1",
+    title: "Analista de Procesos industriales",
+    tag: "Creado el 01/02/2024",
     description:
       "As Uber works through a huge amount of internal management turmoil.",
     route: "/dashboard/profile",
