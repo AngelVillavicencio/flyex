@@ -33,7 +33,7 @@ const Navbar = () => {
                         }
 
                         <Link to={user ? "/overview" : "/"} className="flex ms-2 md:me-24">
-                            <span className="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap">Selection IA</span>
+                            <span className="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap">Recluta IA</span>
                         </Link>
                     </div>
                     {

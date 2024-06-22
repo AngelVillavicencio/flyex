@@ -31,7 +31,7 @@ export const statisticsCardsData = [
   {
     color: "gray",
     icon: UserPlusIcon,
-    title: "New Clients",
+    title: "Nuevos postulantes",
     value: "3,462",
     footer: {
       color: "text-red-500",

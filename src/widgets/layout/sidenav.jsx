@@ -26,7 +26,7 @@ export function Sidenav({ brandImg, brandName, routes }) {
       <div
         className={`relative`}
       >
-        <Link to="/overview/home" className="py-6 px-8 text-center">
+        <Link to="/overview/inicio" className="py-6 px-8 text-center">
           <Typography
             variant="h6"
             color={sidenavType === "dark" ? "white" : "blue-gray"}
@@ -96,7 +96,7 @@ export function Sidenav({ brandImg, brandName, routes }) {
 
 Sidenav.defaultProps = {
   brandImg: "/img/logo-ct.png",
-  brandName: "Selection IA",
+  brandName: "Recluta IA",
 };
 
 Sidenav.propTypes = {

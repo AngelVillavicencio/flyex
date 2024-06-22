@@ -5,7 +5,7 @@ export const projectsData = [
     tag: "Creado el 01/02/2024",
     description:
       "As Uber works through a huge amount of internal management turmoil.",
-    route: "/dashboard/profile",
+    route: `/overview/postulaciones/1`,
     members: [
       { img: "/img/team-1.jpeg", name: "Romina Hadid" },
       { img: "/img/team-2.jpeg", name: "Ryan Tompson" },
@@ -15,25 +15,24 @@ export const projectsData = [
   },
   {
     img: "/img/home-decor-2.jpeg",
-    title: "Scandinavian",
-    tag: "Project #2",
+    title: "Analista programador ReactJS",
+    tag: "Creado el 01/03/2024",
     description:
       "Music is something that every person has his or her own specific opinion about.",
-    route: "/dashboard/profile",
+    route: `/overview/postulaciones/2`,
     members: [
       { img: "/img/team-4.jpeg", name: "Alexander Smith" },
-      { img: "/img/team-3.jpeg", name: "Jessica Doe" },
       { img: "/img/team-2.jpeg", name: "Ryan Tompson" },
       { img: "/img/team-1.jpeg", name: "Romina Hadid" },
     ],
   },
   {
     img: "/img/home-decor-3.jpeg",
-    title: "Minimalist",
-    tag: "Project #3",
+    title: "Ingeniero de software Senior",
+    tag: "Creado el 01/04/2024",
     description:
       "Different people have different taste, and various types of music.",
-    route: "/dashboard/profile",
+    route: `/overview/postulaciones/3`,
     members: [
       { img: "/img/team-1.jpeg", name: "Romina Hadid" },
       { img: "/img/team-2.jpeg", name: "Ryan Tompson" },
@@ -43,15 +42,13 @@ export const projectsData = [
   },
   {
     img: "/img/home-decor-4.jpeg",
-    title: "Gothic",
-    tag: "Project #4",
+    title: "Junior UX/UI",
+    tag: "Creado el 01/05/2024",
     description:
       "Why would anyone pick blue over pink? Pink is obviously a better color.",
-    route: "/dashboard/profile",
+    route: `/overview/postulaciones/4`,
     members: [
       { img: "/img/team-4.jpeg", name: "Alexander Smith" },
-      { img: "/img/team-3.jpeg", name: "Jessica Doe" },
-      { img: "/img/team-2.jpeg", name: "Ryan Tompson" },
       { img: "/img/team-1.jpeg", name: "Romina Hadid" },
     ],
   },

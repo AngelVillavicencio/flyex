@@ -47,7 +47,7 @@ export function IniciaSesion() {
                                     }}
                                 />
                             </div>
-                            <Link to="/overview/home">
+                            <Link to="/overview/inicio">
                                 <Button className="mt-6" fullWidth>
                                     Iniciar sesión
                                 </Button>

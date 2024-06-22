@@ -23,8 +23,15 @@ import { Link } from "react-router-dom";
 import { ProfileInfoCard, MessageCard } from "@/widgets/cards";
 import { platformSettingsData, conversationsData, projectsData } from "@/data";
 import { Space } from "antd";
+import { useEffect } from "react";
+import { usePostulaciones } from "@/hooks/usePostulaciones";
 
 export function Profile() {
+
+  const { postulaciones } = usePostulaciones()
+
+
+
   return (
     <>
       <div className="relative mt-8 h-72 w-full overflow-hidden rounded-xl bg-[url('/img/background-image.png')] bg-cover	bg-center">
@@ -32,7 +39,6 @@ export function Profile() {
       </div>
       <Card className="mx-3 -mt-52 mb-6 lg:mx-4 border border-blue-gray-100">
         <CardBody className="p-4">
-
           <div className="px-4 pb-4">
             <Typography variant="h5" color="blue-gray" className="mb-2">
               Procesos de selección
@@ -64,61 +70,26 @@ export function Profile() {
                 <Option>2022</Option>
                 <Option>2021</Option>
               </Select>
-
             </Space>
             <div className="mt-6 grid grid-cols-1 gap-12 md:grid-cols-2 xl:grid-cols-4">
-              {projectsData.map(
-                ({ img, title, description, tag, route, members }) => (
-                  <Card key={title} color="transparent" shadow={false}>
-                    {/*<CardHeader
-                      floated={false}
-                      color="gray"
-                      className="mx-0 mt-0 mb-4 h-64 xl:h-40"
-                    >
-                      
-                        
-                        <img
-                        src={img}
-                        alt={title}
-                        className="h-full w-full object-cover"
-                      />
-                        
-                      
-
-                    </CardHeader>*/}
+              {postulaciones?.map(
+                ({ puestoTrabajo, descripcion, tipo, id }) => (
+                  <Card key={id} color="transparent" shadow={false}>
                     <CardBody className="py-0 px-1">
-
                       <Typography
                         variant="h5"
                         color="blue-gray"
                         className="mt-1 mb-2"
                       >
-                        {title}
+                        {puestoTrabajo}
                       </Typography>
-                      <Typography
-                        variant="small"
-                        className="font-normal text-blue-gray-900"
-                      >
-                        {tag}
-                      </Typography>
-                      <Typography
-                        variant="small"
-                        className="font-normal text-blue-gray-500"
-                      >
-                        {description}
-                      </Typography>
-                    </CardBody>
-                    <CardFooter className="mt-6 flex items-center justify-between py-0 px-1">
-                      <Link to={route}>
-                        <Button variant="outlined" size="sm">
-                          view project
-                        </Button>
-                      </Link>
                       <div>
-                        {members.map(({ img, name }, key) => (
+                        {
+                          /*
+                          members.map(({ img, name }, key) => (
                           <Tooltip key={name} content={name}>
                             <Avatar
-                              src={img}
+                              src="/img/team-1.jpeg"
                               alt={name}
                               size="xs"
                               variant="circular"
@@ -126,8 +97,28 @@ export function Profile() {
                                 }`}
                             />
                           </Tooltip>
-                        ))}
+                              ))*/}
                       </div>
+                      <Typography
+                        variant="small"
+                        className="font-normal text-blue-gray-900 mt-2"
+                      >
+                        {tipo}
+                      </Typography>
+                      <Typography
+                        variant="small"
+                        className="font-normal text-blue-gray-500 text-justify"
+                      >
+                        {descripcion}
+                      </Typography>
+                    </CardBody>
+                    <CardFooter className="mt-6 flex items-center justify-between py-0 px-1">
+                      <Link to={`/overview/postulaciones/${id}`}>
+                        <Button variant="outlined" size="sm">
+                          ver proceso
+                        </Button>
+                      </Link>
+
                     </CardFooter>
                   </Card>
                 )

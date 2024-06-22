@@ -90,7 +90,7 @@ export function Home() {
             <table className="w-full min-w-[640px] table-auto">
               <thead>
                 <tr>
-                  {["postulaciones", "miembros", "budget", "completion"].map(
+                  {["postulaciones", "postulantes", "budget", "completion"].map(
                     (el) => (
                       <th
                         key={el}

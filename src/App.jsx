@@ -4,6 +4,7 @@ import Landing from "./pages/Landing";
 import IniciaSesion from "./pages/IniciaSesion";
 import RegistroSesion from "./pages/RegistroSesion";
 import { AuthProvider } from "./context/context/authContext/Index";
+import PostJob from "./pages/PostJob";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         />
         <Route path="/inicia-sesion" element={<IniciaSesion></IniciaSesion>}></Route>
         <Route path="/registrarse" element={<RegistroSesion></RegistroSesion>}></Route>
+        <Route path="/jobs/:idPostulacion" element={<PostJob></PostJob>}></Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </AuthProvider>

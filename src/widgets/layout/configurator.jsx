@@ -56,18 +56,17 @@ export function Configurator() {
   };
 
   React.useEffect(() => {
-    const stars = fetch(
+    /*const stars = fetch(
       "https://api.github.com/repos/creativetimofficial/material-tailwind-dashboard-react"
     )
       .then((response) => response.json())
-      .then((data) => setStars(formatNumber(data.stargazers_count, 1)));
+      .then((data) => setStars(formatNumber(data.stargazers_count, 1)));*/
   }, []);
 
   return (
     <aside
-      className={`fixed top-0 right-0 z-50 h-screen w-96 bg-white px-2.5 shadow-lg transition-transform duration-300 ${
-        openConfigurator ? "translate-x-0" : "translate-x-96"
-      }`}
+      className={`fixed top-0 right-0 z-50 h-screen w-96 bg-white px-2.5 shadow-lg transition-transform duration-300 ${openConfigurator ? "translate-x-0" : "translate-x-96"
+        }`}
     >
       <div className="flex items-start justify-between px-6 pt-8 pb-6">
         <div>
@@ -95,11 +94,9 @@ export function Configurator() {
             {Object.keys(sidenavColors).map((color) => (
               <span
                 key={color}
-                className={`h-6 w-6 cursor-pointer rounded-full border bg-gradient-to-br transition-transform hover:scale-105 ${
-                  sidenavColors[color]
-                } ${
-                  sidenavColor === color ? "border-black" : "border-transparent"
-                }`}
+                className={`h-6 w-6 cursor-pointer rounded-full border bg-gradient-to-br transition-transform hover:scale-105 ${sidenavColors[color]
+                  } ${sidenavColor === color ? "border-black" : "border-transparent"
+                  }`}
                 onClick={() => setSidenavColor(dispatch, color)}
               />
             ))}
