@@ -1,0 +1,30 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f4f6;
+    padding: 2rem;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-buttons {
+    margin-top: 1rem;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 0.5rem;
+}

@@ -7,7 +7,7 @@ import {
   RectangleStackIcon,
   UsersIcon,
 } from "@heroicons/react/24/solid";
-import { Home, Profile, Tables, Notifications } from "@/pages/dashboard";
+import { Home, Slogan, Footer, Notifications } from "@/pages/dashboard";
 import { SignIn, SignUp } from "@/pages/auth";
 import CrearPostulacion from "./pages/postulaciones/CrearPostulacion";
 import VerPostulacion from "./pages/postulaciones/VerPostulacion";
@@ -28,15 +28,15 @@ export const routesSideNavbar = [
       },
       {
         icon: <TableCellsIcon {...icon} />,
-        name: "Crear postulación",
-        path: "/crear-postulacion",
-        element: <CrearPostulacion />,
+        name: "Slogan",
+        path: "/slogan",
+        element: <Slogan />,
       },
       {
         icon: <TableCellsIcon {...icon} />,
-        name: "Postulaciones",
-        path: "/postulaciones",
-        element: <Profile />,
+        name: "Footer",
+        path: "/footer",
+        element: <Footer />,
       },
       {
         icon: <UsersIcon {...icon} />,
