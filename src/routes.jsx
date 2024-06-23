@@ -7,7 +7,7 @@ import {
   RectangleStackIcon,
   UsersIcon,
 } from "@heroicons/react/24/solid";
-import { Home, Slogan, Footer, Notifications } from "@/pages/dashboard";
+import { Home, Slogan, Footer, Notifications } from "@/pages/dashboard/index";
 import { SignIn, SignUp } from "@/pages/auth";
 import CrearPostulacion from "./pages/postulaciones/CrearPostulacion";
 import VerPostulacion from "./pages/postulaciones/VerPostulacion";
@@ -26,7 +26,7 @@ export const routesSideNavbar = [
         path: "/inicio",
         element: <Home />,
       },
-      {
+      /*{
         icon: <TableCellsIcon {...icon} />,
         name: "Slogan",
         path: "/slogan",
@@ -49,7 +49,7 @@ export const routesSideNavbar = [
         name: "Membresía",
         path: "/membresia",
         element: <Tables />,
-      }
+      }*/
     ],
   }
 ];
@@ -73,27 +73,9 @@ export const routes = [
       {
         icon: <TableCellsIcon {...icon} />,
         name: "Postulaciones",
-        path: "/postulaciones",
-        element: <Profile />,
-      },
-      {
-        icon: <TableCellsIcon {...icon} />,
-        name: "Postulaciones",
         path: "/postulaciones/:idPostulacion",
         element: <VerPostulacion />,
       },
-      {
-        icon: <UsersIcon {...icon} />,
-        name: "Postulantes",
-        path: "/postulantes",
-        element: <Tables />,
-      },
-      {
-        icon: <UsersIcon {...icon} />,
-        name: "Membresía",
-        path: "/membresia",
-        element: <Tables />,
-      }
     ],
   }
 ];

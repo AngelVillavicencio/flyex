@@ -1,8 +1,8 @@
 import React from 'react';
-import homeImage from '../assets/images/homeImage';
+import homeImage from '../../assets/logo.png';
 import './Slogan.css'; //CSS
 
-const Slogan = () => {
+export const Slogan = () => {
     return (
         <section className="Slogan">
             <img src={homeImage} alt="Viaje frustrado" className="slogan-image" />

@@ -8,6 +8,7 @@ export const usePostulaciones = () => {
 
     const getPostulacionById = async (id) => {
         const postulacion_ = await getPostulacion(id)
+        
         if (!postulacion_)
             return null
         return postulacion_

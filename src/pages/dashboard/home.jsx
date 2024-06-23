@@ -1,13 +1,13 @@
 import React from "react";
-import Header from "../components/Header";
-import Slogan from "../components/Slogan";
-import Footer from "../components/Footer"; 
+import Header from "./header";
+import Slogan from "./slogan";
+import Footer from "./footer"; 
 import { Typography, Card, CardHeader, CardBody, IconButton, Menu, MenuHandler, MenuList, MenuItem, Avatar, Tooltip, Progress } from "@material-tailwind/react";
 import { EllipsisVerticalIcon, CheckCircleIcon } from "@heroicons/react/24/outline";
 import { statisticsCardsData, projectsTableData } from "@/data"; // Ajusta según la ubicación real de tus datos
 import { StatisticsCard } from "@/widgets/cards";
 
-const Home = () => {
+export const Home = () => {
 return (
     <div>
     <Header />
