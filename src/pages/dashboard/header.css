@@ -29,4 +29,5 @@ nav a {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 250px;
 }

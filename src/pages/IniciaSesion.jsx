@@ -7,7 +7,7 @@ import {
     ThemeProvider,
 } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
-import team from "../components/assets/team.jpg";
+//import team from "../components/assets/team.jpg";
 import LayoutPages from "@/components/LayoutPages";
 
 
