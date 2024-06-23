@@ -5,7 +5,10 @@ import './header.css'; // CSS
 const Header = () => {
   return (
     <header className="header">
+      <Link to="/">
       <div className="logo">FlyEx</div>
+      </Link>
+      
       <nav>
         <ul>
           <li className='text-center'><Link to="/comprar">Comprar Viajes</Link></li>
