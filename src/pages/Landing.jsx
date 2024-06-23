@@ -37,10 +37,10 @@ const Landing = () => {
                         </h1>
                         <div className="flex flex-col space-y-2">
                             <div className="flex flex-col lg:flex-row gap-4">
-                                <Link to="/inicia-sesion" className="lg:w-1/2">
+                                <Link to="/comprar" className="lg:w-1/2">
                                     <Button className="w-full">COMPRAR VUELO</Button>
                                 </Link>
-                                <Link to="/inicia-sesion" className="lg:w-1/2">
+                                <Link to="/vender" className="lg:w-1/2">
                                     <Button className="w-full">VENDER VUELO</Button>
                                 </Link>
                             </div>
@@ -48,12 +48,7 @@ const Landing = () => {
                                 ¡Empieza ahora! Descubre la tranquilidad con Flyex. Convierte tus contratiempos en oportunidades y recupera el valor de tus viajes no realizados.
                             </p>
                         </div>
-                        <div className="mt-4 text-gray-500 text-center lg:text-left">
-                            <span>¿Ya eres miembro? </span>
-                            <Link className="text-blue-600 hover:underline" to="/inicia-sesion">
-                                Iniciar sesión
-                            </Link>
-                        </div>
+                        
                     </div>
                     <div className="lg:w-1/2 w-full mt-8 lg:mt-0">
                         <img

@@ -45,8 +45,10 @@ const [formData, setFormData] = useState({
   };
 
   return (
-    <div className="flight-details-form">
-      <h2>Detalles de vuelo</h2>
+    <LayoutPages>
+
+<div className="flight-details-form">
+      <h2>Ingresa los datos de tu vuelo</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label>Nombres y apellidos:</label>
@@ -95,6 +97,8 @@ const [formData, setFormData] = useState({
         <button type="submit">Generar cambios</button>
       </form>
     </div>
+    </LayoutPages>
+    
   );
 };
 

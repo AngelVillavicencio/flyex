@@ -37,14 +37,17 @@ const TarjetaViaje = ({ viaje }) => (
 );
 
 const App = () => (
-<div className="app">
-    <h1>FlyEx</h1>
-    <div className="listado-viajes">
-    {listadoViajes.map(viaje => (
-        <TarjetaViaje key={viaje.id} viaje={viaje} />
-    ))}
+    <LayoutPages>
+
+    <div className="app">
+        <div className="listado-viajes">
+        {listadoViajes.map(viaje => (
+            <TarjetaViaje key={viaje.id} viaje={viaje} />
+        ))}
+        </div>
     </div>
-</div>
+    </LayoutPages>
+
 );
 
 export default App;
