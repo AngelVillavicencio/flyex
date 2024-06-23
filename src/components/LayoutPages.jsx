@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 import { Button } from "antd";
 import { useAuth } from "@/context/context/authContext/Index";
 import { logOut } from "@/services/firebase/authFirebase";
+import Header from "@/pages/dashboard/header";
+import { Footer } from "@/pages/dashboard";
 
-
+/*
 const Navbar = () => {
 
     const { user, setStateUser } = useAuth();
@@ -90,12 +92,12 @@ const Navbar = () => {
     )
 }
 
-
+*/
 
 const LayoutPages = ({ children }) => {
     return (
         <div className="">
-            <Navbar></Navbar>
+            <Header></Header>
             <div className="">
                 {children}
             </div>
@@ -107,7 +109,7 @@ const LayoutPages = ({ children }) => {
 export default LayoutPages
 
 
-
+/*
 const Footer = () => {
     return (
         <footer className="text-center px-4 lg:px-40 py-4 h-12 sm:h-20 w-full sm:pt-2 pt-4 border-t mt-5 flex sm:flex-row flex-col justify-between items-center space-y-3 sm:mb-0 mb-3 border-gray-200">
@@ -152,4 +154,4 @@ const Footer = () => {
             </div>
         </footer>
     )
-}
+}*/

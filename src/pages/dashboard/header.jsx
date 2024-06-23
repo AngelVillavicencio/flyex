@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Header.css'; // CSS
+import './header.css'; // CSS
 
 const Header = () => {
   return (
@@ -8,13 +8,11 @@ const Header = () => {
       <div className="logo">FlyEx</div>
       <nav>
         <ul>
-          <li><Link to="/">Comprar Viajes</Link></li>
-          <li><Link to="/">Vender Viajes</Link></li>
-          <li><Link to="/">Nosotros</Link></li>
-          <li><Link to="/">Políticas y Condiciones</Link></li>
+          <li className='text-center'><Link to="/comprar">Comprar Viajes</Link></li>
+          <li className='text-center'><Link to="/vender">Vender Viajes</Link></li>
         </ul>
       </nav>
-      <button className="login-button">Iniciar Sesión</button>
+      <button className="login-button">Conecta tu wallet</button>
     </header>
   );
 }

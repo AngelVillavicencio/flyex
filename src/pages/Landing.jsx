@@ -10,14 +10,14 @@ import { useAuth } from "@/context/context/authContext/Index";
 
 const Landing = () => {
 
-    const { user } = useAuth();
+    /*const { user } = useAuth();
 
     const navigate = useNavigate()
 
 
     if (user) {
         return navigate("/overview");
-    }
+    }*/
 
     return (
         <>
